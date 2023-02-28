@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { getArgs } from './helpers/args.js'
+import { getArgs } from './helpers/args.helper.js'
 import {printHelp, printSuccess, printError, logDataResultBeautiful} from "./services/log.service.js";
 import {getKeyValue, saveKeyValue} from "./services/storage.service.js";
 import {TOKEN_DICTIONARY} from "./dictionary/service.dictionary.js"
@@ -56,10 +56,10 @@ const initCLI = () => {
         return printHelp();
     }
     if (args.s) {
-        saveCity(args.s);
+        return saveCity(args.s);
     }
     if (args.t) {
-        saveToken(args.t);
+        return saveToken(args.t);
     }
     getForcast();
     // Give weather

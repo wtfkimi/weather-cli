@@ -6,6 +6,7 @@ const EMOJI_DICTIONARY = {
     PRESSURE: "🍾",
     MINIMUM: "🤏",
     MAXIMUM: "👌",
+    WEATHER: "🌈",
 }
 
 export {EMOJI_DICTIONARY}
