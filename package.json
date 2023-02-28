@@ -8,7 +8,6 @@
     "weather": "weather.js"
   },
   "type": "module",
-  "files": [],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,7 +23,7 @@
     "url": "https://github.com/wtfkimi/weather-cli"
   },
   "bugs": {
-    "url": "https://github.com",
+    "url": "https://github.com/wtfkimi/weather-cli",
     "email": "rdy2qa@gmail.com"
   },
   "dependencies": {
