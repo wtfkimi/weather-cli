@@ -1,5 +1,6 @@
 import chalk from 'chalk'
 import dedent from 'dedent-js'
+import {EMOJI_DICTIONARY} from "../dictionary/emoji.dictionary.js"
 
 const printError = (error) => {
     console.log(chalk.bgRed(' ERROR ') + ' ' + error);
@@ -18,6 +19,21 @@ const printHelp = () => {
         -t [API_KEY] для сохранения токена
         `
     );
+};
+
+const logDataResultBeautiful = (data) => {
+    console.log(data)
+    console.log(
+        dedent`
+        ${EMOJI_DICTIONARY.COORDINATE} ${chalk.bgCyan(' Координаты: ')} долгота ${data?.coord?.lon}, широта: ${data?.coord?.lat}
+        ${EMOJI_DICTIONARY.THERMOMETER} ${chalk.bgCyan(' Температура: ')} по цельсию ${data?.main?.temp}, чувствуется как ${data?.main?.feels_like}
+        ${EMOJI_DICTIONARY.PRESSURE} ${chalk.bgCyan(' Атмосферное давление: ')} показатель  ${data?.main?.pressure} hPa, чувствуется как ${data?.main?.humidity}%
+        ${EMOJI_DICTIONARY.MINIMUM} ${chalk.bgCyan(' Минимальная температура: ')} по цельсию  ${data?.main?.temp_min}
+        ${EMOJI_DICTIONARY.MAXIMUM} ${chalk.bgCyan(' Максимальная температура: ')} по цельсию  ${data?.main?.temp_max}
+        
+      
+        `
+    )
 }
 
-export { printSuccess, printError, printHelp };
+export { printSuccess, printError, printHelp, logDataResultBeautiful };

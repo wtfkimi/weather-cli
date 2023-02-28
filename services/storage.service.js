@@ -3,6 +3,8 @@ import { join, basename, dirname, extname, relative, isAbsolute, resolve, sep } 
 import { promises } from 'fs';
 
 const filePath = join(homedir(), 'weather-data.json');
+
+
 const saveKeyValue = async (key, value) => {
     let data = {};
     if (await isExist(filePath)) {
