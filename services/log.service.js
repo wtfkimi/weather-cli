@@ -23,7 +23,6 @@ const printHelp = () => {
 };
 
 const logDataResultBeautiful = (data) => {
-    console.log(data)
     console.log(
         dedent`
         ${getIcon(data?.weather[0]?.icon)} Погода в городе ${data.name}
