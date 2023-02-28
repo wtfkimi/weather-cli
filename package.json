@@ -1,6 +1,6 @@
 {
-  "name": "weather-cli-demo-satoshi",
-  "version": "1.0.3",
+  "name": "weather-cli-end1fromearth",
+  "version": "1.0.0",
   "description": "CLI for getting weather",
   "private": false,
   "main": "weather.js",
