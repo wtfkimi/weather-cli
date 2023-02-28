@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "CLI for getting weather",
   "private": false,
-  "main": "index.js",
+  "main": "weather.js",
   "bin": {
     "weather": "weather.js"
   },
