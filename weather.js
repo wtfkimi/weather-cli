@@ -19,7 +19,7 @@ const saveToken = async (token) => {
 }
 
 const saveCity = async (city) => {
-    if (!city) {
+    if (typeof city === 'boolean') {
         printError("City not set");
         return;
     }
