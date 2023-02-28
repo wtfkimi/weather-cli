@@ -1,5 +1,5 @@
 {
-  "name": "weather-cli",
+  "name": "weather-cli-demo-satoshi",
   "version": "1.0.0",
   "description": "CLI for getting weather",
   "private": false,
@@ -21,7 +21,7 @@
   "homepage": "https://google.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com"
+    "url": "https://github.com/wtfkimi/weather-cli"
   },
   "bugs": {
     "url": "https://github.com",
